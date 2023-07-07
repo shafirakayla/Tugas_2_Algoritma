@@ -1,0 +1,41 @@
+
+//SHAFIRA KAYLA AZHARI
+//227064516009
+public class karyawan {
+    String NIP;
+    String nama;
+    String jenisKelamin;
+    int totalGaji;
+    int jumlahHari;
+    
+  void karyawan(String NIP, String nama, String jenisKelamin) {
+    this.NIP = NIP;
+    this.nama = nama;
+    this.jenisKelamin = jenisKelamin;
+  }
+
+  void absKerja() {
+    this.jumlahHari++;
+  }
+
+  void hitungGaji() {
+    this.totalGaji = this.jumlahHari * 50000;
+  }
+
+  void hitungGaji(int jumlah_hari) {
+    this.totalGaji = jumlah_hari * 50000;
+  }
+}
+
+class Dosen extends karyawan {
+  String golongan;
+  int jumlah_sks;
+  int upah_per_sks;
+
+  void hitungGaji() {
+    this.totalGaji = this.upah_per_sks * this.jumlah_sks * this.jumlahHari;
+  }
+}
+
+class Staff extends karyawan {
+}
