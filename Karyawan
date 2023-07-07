@@ -1,0 +1,41 @@
+
+//SHAFIRA KAYLA AZHARI
+//227064516009
+public class main {
+  public static void main(String[] args) {
+    karyawan karyawan = new karyawan();
+    karyawan.karyawan("111", "Shafira Kayla Azhari", "Perempuan");
+    karyawan.absKerja();
+    karyawan.hitungGaji();
+    System.out.println("NIP Karyawan : " + karyawan.NIP);
+    System.out.println("Nama Karyawan : " + karyawan.nama);
+    System.out.println("Jenis Kelamin Karyawan : " + karyawan.jenisKelamin);
+    System.out.println("Absen Kerja Karyawan : " + karyawan.jumlahHari);
+    System.out.println("Gaji Karyawan : " + karyawan.totalGaji);
+    System.out.println("");
+    
+    Dosen dosen = new Dosen();
+    dosen.karyawan("222", "Dhieka", "Perempuan");
+    dosen.jumlah_sks = 9;
+    dosen.upah_per_sks = 50000;
+    dosen.absKerja();
+    dosen.hitungGaji();
+    System.out.println("NIP Dosen : " + dosen.NIP);
+    System.out.println("Nama Dosen : " + dosen.nama);
+    System.out.println("Jenis Kelamin Dosen : " + dosen.jenisKelamin);
+    System.out.println("Absen Kerja Dosen : " + dosen.jumlahHari);
+    System.out.println("Gaji Dosen : " + dosen.totalGaji);
+    System.out.println("");
+    
+    Staff staff = new Staff();
+    staff.karyawan("333", "David Arrow", "Laki-Laki");
+    staff.absKerja();
+    staff.hitungGaji();
+    System.out.println("NIP Staff : " + staff.NIP);
+    System.out.println("Nama Staff : " + staff.nama);
+    System.out.println("Jenis Kelamin Staff : " + staff.jenisKelamin);
+    System.out.println("Absen Kerja Staff : " + staff.jumlahHari);
+    System.out.println("Gaji Staff : " + staff.totalGaji);
+    System.out.println("");
+  }
+}
